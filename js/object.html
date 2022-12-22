@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECTS -JS</title>
+</head>
+<body>
+    <p class="message"></p>
+    <script>
+        /*var car = 
+            model: 2009,
+            brand: "BMW",
+            isAutomatic: true,
+            owner: "sauver",
+        };
+        // Accesing
+        // objectname.object_property_name
+        
+        // sms.innerHTML = car.owner;
+
+        // UPDATING
+        // objectname.object_property_name = value
+        car.model = 2020;
+        // sms.innerHTML = car.model;
+
+        // REMOVING PROPERTY
+        car.owner = ''
+        sms.innerHTML = car.owner;
+
+        // INSERT NEW PROPERTY
+        // objectname.object_property_name = value
+        car.color = "blue";
+        sms.innerHTML = car.color */
+
+        sms = document.querySelector('.message');
+        var person = {
+            fname: "Sauve",
+            lname: "Tuyizere",
+            age: 60,
+            married: true,
+            fullname: function () {
+                return this.fname + " " + this.lname;
+            }
+        };
+
+        sms.innerHTML = person.fullname();
+    </script>
+</body>
+</html>

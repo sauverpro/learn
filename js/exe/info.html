@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNFORMATION</title>
+</head>
+<body>
+
+    <div>
+        <p id="userData"></p>
+    </div>
+
+    <script>
+
+        container = document.getElementById("userData");
+    
+        // 1.INSERTING NEW DATA 
+
+        name = prompt('Enter your name: ');
+        age = Number(prompt('Enter your age: '));
+        hobbie = prompt('Enter your hobbies: ');
+        school = prompt('Which school are from? ');
+
+        userInfo = {}
+
+        // SAVING DATA INTO OBJECT
+        userInfo.name = name;
+        userInfo.age = age;
+        userInfo.hobbie = hobbie;
+        userInfo.school = school;
+        console.log(userInfo.age);
+        // DISPLAY INFO
+        // container.innerHTML = `My name is: ${userInfo.name} <br> Age: ${userInfo.age} <br> Hobbie: ${userInfo.hobbie} <br> School: ${userInfo.school}`;
+
+    </script>
+</body>
+</html>
+<!-- 
+    TASKS -- a. create object,
+             b. variable to store user information
+             c. get display html element
+             d. display uder data into selected element
+
+ -->
+
+<!-- 2. DISPLAY USER DATA ON A PAGE -->
+

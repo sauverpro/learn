@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+
+        motor=document.querySelector("#demo");
+
+        var briella={
+            firstName:"Ishimwe",
+            lastName:"Briella",
+            gender:"female",
+            age:4,
+        };
+        // objectname.object_property_name
+
+        motor.innerHTML = briella.firstName;
+
+        // UPDATE
+        // objectname.object_property_name
+
+        briella.age=3;
+        motor.innerHTML = briella.age;
+
+        // delete
+                // objectname.object_property_name
+        briella.mom="reine";
+        motor.innerHTML = briella.mom;
+
+    </script>
+
+
+
+</body>
+</html>

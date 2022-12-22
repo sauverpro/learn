@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <button id="btn" >Click me</button>
+    <input type="text" id="inpt">
+
+    <script>
+        btn = document.getElementById("btn");
+        btn.addEventListener('click', () => {
+            btn.innerHTML = "Am Here..";
+        });
+        inpt = document.querySelector('#inpt');
+        inpt.addEventListener('mouseout', () => {
+            console.log("Changed");
+        });
+        // document.addEventListener('load', () => {
+        //     alert("Load succsss");
+        // });
+    </script>
+</body>
+</html>

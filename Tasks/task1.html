@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<center>
+<fieldset>
+    <legend>Your name</legend>
+<form name="myForm" action="#" onsubmit="return validateForm()" method="post" id="form">
+    Names: <input  type="text" id="names" name="fname" class="ne">
+    <br>
+    <input  type="submit" id="submitbutton" value="Submit" class="btn">
+</form>
+</fieldset>
+</center>
+<script>
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+    
+        return false;
+        alert("Name must be filled out");
+      }
+    }
+    function validateForm() {
+        var names = document.forms["myForm"]["fname"].value;
+    alert(names);
+    }
+
+
+
+    </script>
+</body>
+</html>
+<style>
+*{font-size: 15px;
+
+    font-family: arial;
+background-color: rgb(48, 52, 58);
+}
+fieldset{
+float: left;
+width: 30%;
+background-color: floralwhite;
+text-align: center;
+border-radius: 10px;
+margin-left: 30%;
+margin-top: 20%;
+}
+
+legend{
+text-align: center;
+font-size: 20px;
+color: floralwhite;
+}
+
+form{
+    background-color: floralwhite;
+    font-size: 24px;
+    
+
+}
+
+form .ne{
+    background-color: floralwhite;
+    border-radius: 5px;
+    
+}
+
+form .btn{
+    padding: 2%;
+    background-color: rgb(29, 22, 10);
+    border-radius: 5px;
+    font-size: 24px;
+    color: rgb(111, 111, 136);
+
+}
+</style>

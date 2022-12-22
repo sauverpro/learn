@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <p id="cal"></p>
+
+    <script>
+        container = document.getElementById("cal");
+
+
+        var op;
+        num1 = Number(prompt("Enter first number"));
+        op = prompt("Enter operation");
+        num2 = Number(prompt("Enter second number"));
+
+        calculator = {}
+
+        
+        
+        switch (op) {
+            case '-':
+                calculator.sum=num1-num2;
+                break;
+
+                case '+':
+                calculator.sum=num1+num2;
+                break;
+
+                case '*':
+                calculator.sum=num1*num2;
+                break;
+
+                case '/':
+                calculator.sum=num1 / num2;
+                break;
+            default:
+            calculator.sum= "invaid operation";
+                break;
+        }
+            container.innerHTML= calculator.sum;
+    </script>
+</body>
+</html>
