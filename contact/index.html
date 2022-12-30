@@ -72,7 +72,7 @@
     const username = userName.value;
     const pass = passWord.value;
     for (let log of users) {
-      if (username == log.Username && pass == log.Pass) {
+      if (username == log.Username &&  pass == log.Pass) {
         message.innerHTML = "login successful";
         location.href = "contact.html";
         break;
