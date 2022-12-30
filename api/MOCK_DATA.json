@@ -1,0 +1,75 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "id": 1,
+            "first_name": "Correna",
+            "last_name": "Andreas",
+            "email": "candreas0@accuweather.com",
+            "gender": "Non-binary"
+        },
+        {
+            "id": 2,
+            "first_name": "Lucilia",
+            "last_name": "Stannett",
+            "email": "lstannett1@symantec.com",
+            "gender": "Female"
+        },
+        {
+            "id": 3,
+            "first_name": "Adolphus",
+            "last_name": "Dines",
+            "email": "adines2@usa.gov",
+            "gender": "Male"
+        },
+        {
+            "id": 4,
+            "first_name": "Christi",
+            "last_name": "Robjents",
+            "email": "crobjents3@bravesites.com",
+            "gender": "Female"
+        },
+        {
+            "id": 5,
+            "first_name": "Axel",
+            "last_name": "Klimentyev",
+            "email": "aklimentyev4@dailymail.co.uk",
+            "gender": "Male"
+        },
+        {
+            "id": 6,
+            "first_name": "Andra",
+            "last_name": "Foulkes",
+            "email": "afoulkes5@tripadvisor.com",
+            "gender": "Female"
+        },
+        {
+            "id": 7,
+            "first_name": "Rafaello",
+            "last_name": "Belleny",
+            "email": "rbelleny6@multiply.com",
+            "gender": "Male"
+        },
+        {
+            "id": 8,
+            "first_name": "Bruce",
+            "last_name": "Coulthard",
+            "email": "bcoulthard7@hhs.gov",
+            "gender": "Male"
+        },
+        {
+            "id": 9,
+            "first_name": "Tremain",
+            "last_name": "Rustadge",
+            "email": "trustadge8@hao123.com",
+            "gender": "Male"
+        },
+        {
+            "id": 10,
+            "first_name": "Nannette",
+            "last_name": "Copozio",
+            "email": "ncopozio9@si.edu",
+            "gender": "Female"
+        }
+    ]
+}
