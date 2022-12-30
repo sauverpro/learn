@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Gender</th>
+        </thead>
+        <tbody id="display"></tbody>
+      </table>
+    </div>
+
+    <script>
+      let getData = document.getElementById("display");
+      document.addEventListener("DOMContentLoaded", async (e) => {
+        const request = await fetch("MOCK_DATA.json", {
+          header: {
+            "content-Type": "application/json",
+          },
+        });
+        const response = await request.json();
+        response.data.map((all) => {
+          getData.innerHTML += `
+          <tr>
+          <td>${all.id}</td>
+          <td>${all.first_name}</td>
+          <td>${all.last_name}</td>
+          <td>${all.email}</td>
+          <td>${all.gender}</td>
+          </tr>
+          `;
+        });
+      });
+    </script>
+  </body>
+</html>
